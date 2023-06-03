@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main class="content">
+
+        {% include 'includes/navigation.html' %}
+
+        <div style="text-align: center;margin-top: 100px;">
+            <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-primary"><a href="/download-brinkbionics-db" style="color:inherit"> Export Data </a></button>
+            </div>
+        </div>
+        
+
+        {% include 'includes/footer.html' %}
+
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
